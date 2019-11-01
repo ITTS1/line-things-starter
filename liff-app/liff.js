@@ -65,6 +65,14 @@ function uiToggleStateButton(pressed) {
     }
 }
 
+function uiTemp(val) {
+    const el = document.getEliementById("temp-val");
+    el.innerText = val;
+}
+function uiHumid(val) {
+    const el = document.getEliementById("humid-val");
+    el.innerText = val;
+}
 function uiToggleDeviceConnected(connected) {
     const elStatus = document.getElementById("status");
     const elControls = document.getElementById("controls");
